@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body ng-init="male = 'male name';
+                   dirty = 'dirty task';
+                   obnox = 'obnoxious celebrity';
+                   job = 'job title';
+                   celeb= 'celebrity';
+                   huge = 'huge number';
+                   tedious = 'tedious task';
+                   useless = 'useless skill';
+                   adjective = 'adjective';"
+    class="container">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      <div class="header row">
+        <div class="happy col-md-3">
+          <img src="img/mad-lib-happy-face.png" alt="">
+        </div>
+        <div class="automate col-md-9">
+          <img src="img/ng-mad-libs-logo.png" alt="">
+          <h1>Automate This!</h1>
+        </div>
+      </div>
+      <div class="madLib-input row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>Provide the following word:</h2>
+        </div>
+
+        <div class="input">
+          <div class="col-md-4 male-name">
+            <input type="text" ng-model="male" placeholder="male name">
+          </div>
+          <div class="col-md-4 dirty-task">
+            <input type="text" ng-model="dirty" placeholder="dirty task">
+          </div>
+          <div class="col-md-4 obnoxious">
+            <input type="text" ng-model="obnox"placeholder="Obnoxious celebrity">
+          </div>
+          <div class="col-md-4 job-title">
+            <input type="text" ng-model="job" placeholder="job title">
+          </div>
+          <div class="col-md-4 celeb">
+            <input type="text" ng-model="celeb" placeholder="Celebrity">
+          </div>
+          <div class="col-md-4 huge-number">
+            <input type="text" ng-model="huge" placeholder="Huge number">
+          </div>
+          <div class="col-md-4 tedious">
+            <input type="text" ng-model="tedious" placeholder="Tedious task">
+          </div>
+          <div class="col-md-4 useless">
+            <input type="text" ng-model="useless" placeholder="Useless skill">
+          </div>
+          <div class="col-md-4 adjective">
+            <input type="text" ng-model="adjective" placeholder="Adjective">
+          </div>
+        </div>
+      </div>
+      <div class="madlib row">
+        <div class="col-md-10 col-md-offset-1">
+           <p> <span>{{male}}</span> was a <span>{{job}}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span>{{tedious}}</span> and <span>{{dirty}}</span>. So, <span>{{male}}</span> met with his life mentor <span>{{celeb}}</span> who told his to learn how to <span>{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{useless}}</span> so he studied programming instead.</p><br><br>
+          <p>
+What a great decision! With his new skills, <span>{{male}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnox}}</span> that not only loved <span>{{dirty}}</span> but did it <span>{{huge}}</span> times faster. </p>
+        </div>
+      </div>
+
+
+        <footer>
+        </footer>
+      </div> <!-- /container -->
+      <script src="bower_components/angular/angular.min.js"></script>
+      <script src="http://localhost:35729/livereload.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>

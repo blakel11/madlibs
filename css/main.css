@@ -1,0 +1,74 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+body {
+  border: 2px solid black;
+  margin-top: 50px;
+}
+
+.madLib-input {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 50px 0 90px;
+}
+
+.happy {
+  border-right: 2px solid black;
+}
+
+img, input {
+  display: block;
+  margin: 0 auto;
+}
+
+.automate img {
+  margin: 12px auto;
+  width: 300px;
+  height: auto;
+}
+
+.automate h1 {
+  font-size: 76px;
+  text-align: center;
+}
+
+
+.input {
+  margin-top: 80px;
+}
+
+input[placeholder] {
+  text-align: center;
+}
+
+input {
+  margin: 10px auto;
+}
+
+.male-name input, .huge-number input {
+  width: 120px;
+}
+
+.dirty-task input, .tedious input, .useless input {
+  width: 100px;
+}
+
+.job-title input, .celeb input, .adjective input {
+  width: 80px;
+}
+
+.madlib span {
+  text-decoration: underline;
+}
+
+.madlib {
+  margin: 40px auto;
+}
+
+.madlib p {
+  font-size: 24px;
+}
