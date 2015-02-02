@@ -27,58 +27,61 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <div class="header row">
-        <div class="happy col-md-3">
-          <img src="img/mad-lib-happy-face.png" alt="">
-        </div>
-        <div class="automate col-md-9">
-          <img src="img/ng-mad-libs-logo.png" alt="">
-          <h1>Automate This!</h1>
-        </div>
-      </div>
-      <div class="madLib-input row">
-        <div class="col-md-10 col-md-offset-1">
-          <h2>Provide the following word:</h2>
-        </div>
+      <div class="row">
+        <div class="body col-sm-10 col-sm-offset-1">
+          <div class="header row">
+            <div class="happy col-md-3">
+              <img src="img/mad-lib-happy-face.png" alt="">
+            </div>
+            <div class="automate col-md-9">
+              <img src="img/ng-mad-libs-logo.png" alt="">
+              <h1>Automate This!</h1>
+            </div>
+          </div>
+          <div class="madLib-input row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2>Provide the following words:</h2>
+            </div>
 
-        <div class="input">
-          <div class="col-md-4 male-name">
-            <input type="text" ng-model="male" placeholder="male name">
+            <div class="input">
+              <div class="col-md-4 male-name">
+                <input type="text" ng-model="male" placeholder="male name">
+              </div>
+              <div class="col-md-4 dirty-task">
+                <input type="text" ng-model="dirty" placeholder="dirty task">
+              </div>
+              <div class="col-md-4 obnoxious">
+                <input type="text" ng-model="obnox"placeholder="Obnoxious celebrity">
+              </div>
+              <div class="col-md-4 job-title">
+                <input type="text" ng-model="job" placeholder="job title">
+              </div>
+              <div class="col-md-4 celeb">
+                <input type="text" ng-model="celeb" placeholder="Celebrity">
+              </div>
+              <div class="col-md-4 huge-number">
+                <input type="text" ng-model="huge" placeholder="Huge number">
+              </div>
+              <div class="col-md-4 tedious">
+                <input type="text" ng-model="tedious" placeholder="Tedious task">
+              </div>
+              <div class="col-md-4 useless">
+                <input type="text" ng-model="useless" placeholder="Useless skill">
+              </div>
+              <div class="col-md-4 adjective">
+                <input type="text" ng-model="adjective" placeholder="Adjective">
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 dirty-task">
-            <input type="text" ng-model="dirty" placeholder="dirty task">
-          </div>
-          <div class="col-md-4 obnoxious">
-            <input type="text" ng-model="obnox"placeholder="Obnoxious celebrity">
-          </div>
-          <div class="col-md-4 job-title">
-            <input type="text" ng-model="job" placeholder="job title">
-          </div>
-          <div class="col-md-4 celeb">
-            <input type="text" ng-model="celeb" placeholder="Celebrity">
-          </div>
-          <div class="col-md-4 huge-number">
-            <input type="text" ng-model="huge" placeholder="Huge number">
-          </div>
-          <div class="col-md-4 tedious">
-            <input type="text" ng-model="tedious" placeholder="Tedious task">
-          </div>
-          <div class="col-md-4 useless">
-            <input type="text" ng-model="useless" placeholder="Useless skill">
-          </div>
-          <div class="col-md-4 adjective">
-            <input type="text" ng-model="adjective" placeholder="Adjective">
+          <div class="madlib row">
+            <div class="col-md-10 col-md-offset-1">
+               <p> <span>{{male}}</span> was a <span>{{job}}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span>{{tedious}}</span> and <span>{{dirty}}</span>. So, <span>{{male}}</span> met with his life mentor <span>{{celeb}}</span> who told his to learn how to <span>{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{useless}}</span> so he studied programming instead.</p><br><br>
+              <p>
+          What a great decision! With his new skills, <span>{{male}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnox}}</span> that not only loved <span>{{dirty}}</span> but did it <span>{{huge}}</span> times faster. </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="madlib row">
-        <div class="col-md-10 col-md-offset-1">
-           <p> <span>{{male}}</span> was a <span>{{job}}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span>{{tedious}}</span> and <span>{{dirty}}</span>. So, <span>{{male}}</span> met with his life mentor <span>{{celeb}}</span> who told his to learn how to <span>{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{useless}}</span> so he studied programming instead.</p><br><br>
-          <p>
-What a great decision! With his new skills, <span>{{male}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnox}}</span> that not only loved <span>{{dirty}}</span> but did it <span>{{huge}}</span> times faster. </p>
-        </div>
-      </div>
-
 
         <footer>
         </footer>
