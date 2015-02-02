@@ -17,6 +17,10 @@
   padding: 50px 0 90px;
 }
 
+.madLib-input h2 {
+  margin-left: 50px;
+}
+
 .happy {
   border-right: 2px solid black;
 }
