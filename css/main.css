@@ -1,80 +1,55 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
 .body {
   border: 2px solid black;
   margin-top: 80px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 .madLib-input {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  padding: 50px 0 90px;
-}
-
-.madLib-input h2 {
-  margin-left: 50px;
-}
+  padding: 50px 0 90px; }
+  .madLib-input h2 {
+    margin-left: 50px; }
 
 .happy {
-  border-right: 2px solid black;
-}
+  border-right: 2px solid black; }
 
 img, input {
   display: block;
-  margin: 0 auto;
-}
-
+  margin: 0 auto; }
 
 .automate img {
   margin: 12px auto;
   width: 300px;
-  height: auto;
-}
-
+  height: auto; }
 .automate h1 {
   font-size: 76px;
-  text-align: center;
-}
-
+  text-align: center; }
 
 .input {
-  margin-top: 80px;
-}
-
-input[placeholder] {
-  text-align: center;
-}
+  margin-top: 80px; }
 
 input {
-  margin: 10px auto;
-}
+  margin: 10px auto; }
+  input[placeholder] {
+    text-align: center; }
 
 .male-name input, .huge-number input {
-  width: 120px;
-}
+  width: 120px; }
 
 .dirty-task input, .tedious input, .useless input {
-  width: 100px;
-}
+  width: 100px; }
 
 .job-title input, .celeb input, .adjective input {
-  width: 80px;
-}
-
-.madlib span {
-  text-decoration: underline;
-}
+  width: 80px; }
 
 .madlib {
-  margin: 40px auto;
-}
+  margin: 40px auto; }
+  .madlib span {
+    text-decoration: underline; }
+  .madlib p {
+    font-size: 24px; }
 
-.madlib p {
-  font-size: 24px;
-}
+/*# sourceMappingURL=main.css.map */
