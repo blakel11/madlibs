@@ -1,4 +1,4 @@
-angular.module('myApp',[])
+angular.module('myApp',['ngMessages'])
   .controller('MyCtrl', function($scope){
     $scope.submitForm = function(){
         if( $scope.madLibForm.$valid ) {

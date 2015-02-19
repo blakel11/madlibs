@@ -1,7 +1,21 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+form {
+  .col-md-4 {
+    height: 90px;
 
+    .error {
+      text-align: center;
+      width: 130px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 3px;
+      border: 1px black solid;
+      background: lightcyan;
+    }
+  }
+}
 .header {
   border-bottom: 2px black solid;
 }
