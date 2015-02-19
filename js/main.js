@@ -9,4 +9,14 @@ angular.module('myApp',[])
     $scope.tedious = 'tedious task';
     $scope.useless = 'useless skill';
     $scope.adjective = 'adjective';
+
+    $scope.submit = function(){
+        if( $scope.madLibForm.$valid ) {
+      console.log('The form is valid');
+    } else {
+      console.log('The form is invalid');
+    }
+    };
+
+    $scope.display = 0;
   });
