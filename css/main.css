@@ -32,6 +32,9 @@ img, input {
 .automate h1 {
   font-size: 76px;
   text-align: center; }
+  @media screen and (max-width: 468px) {
+    .automate h1 {
+      font-size: 35px; } }
 
 .input {
   margin-top: 80px; }

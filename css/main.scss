@@ -38,14 +38,18 @@ img, input {
 
 .automate {
   img {
-  margin: 12px auto;
-  width: 300px;
-  height: auto;
+    margin: 12px auto;
+    width: 300px;
+    height: auto;
   }
 
   h1 {
-  font-size: 76px;
-  text-align: center;
+    font-size: 76px;
+    text-align: center;
+
+    @media screen and (max-width: 468px) {
+      font-size: 35px;
+    }
   }
 }
 
