@@ -1,22 +1,28 @@
 angular.module('myApp',[])
   .controller('MyCtrl', function($scope){
-    $scope.male = 'male name';
-    $scope.dirty = 'dirty task';
-    $scope.obnox = 'obnoxious celebrity';
-    $scope.job = 'job title';
-    $scope.celeb= 'celebrity';
-    $scope.huge = 'huge number';
-    $scope.tedious = 'tedious task';
-    $scope.useless = 'useless skill';
-    $scope.adjective = 'adjective';
-
-    $scope.submit = function(){
+    $scope.submitForm = function(){
         if( $scope.madLibForm.$valid ) {
-      console.log('The form is valid');
-    } else {
-      console.log('The form is invalid');
-    }
+            console.log('The form is valid');
+            $scope.display = 1;
+        } else {
+            console.log('The form is invalid');
+        }
+    };
+
+    $scope.restart = function(){
+        console.log('Restart Activated');
+        $scope.display = 0;
+        $scope.male = null;
+        $scope.dirty = null;
+        $scope.obnox = null;
+        $scope.job = null;
+        $scope.celeb= null;
+        $scope.huge = null;
+        $scope.tedious = null;
+        $scope.useless = null;
+        $scope.adjective = null;
+
     };
 
     $scope.display = 0;
-  });
+    });

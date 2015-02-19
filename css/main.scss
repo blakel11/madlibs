@@ -1,60 +1,90 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
 .header {
-  border-bottom: 2px black solid; }
+  border-bottom: 2px black solid;
+}
 
 input[type=submit] {
   float: right;
-  margin: 55px 50px 0; }
+  margin: 55px 50px 0;
+}
 
 .body {
   border: 2px solid black;
   margin-top: 80px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 .madLib-input {
-  padding: 50px 0; }
-  .madLib-input h2 {
-    margin-left: 50px; }
+  padding: 50px 0;
+  
+  h2 {
+  margin-left: 50px;
+  }
+
+}
 
 .happy {
-  border-right: 2px solid black; }
+  border-right: 2px solid black;
+}
 
 img, input {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-.automate img {
+
+.automate {
+  img {
   margin: 12px auto;
   width: 300px;
-  height: auto; }
-.automate h1 {
+  height: auto;
+  }
+
+  h1 {
   font-size: 76px;
-  text-align: center; }
+  text-align: center;
+  }
+}
+
+
 
 .input {
-  margin-top: 80px; }
+  margin-top: 80px;
+}
+
 
 input {
-  margin: 10px auto; }
-  input[placeholder] {
-    text-align: center; }
+  margin: 10px auto;
+
+  &[placeholder] {
+  text-align: center;
+  }
+}
 
 .male-name input, .huge-number input {
-  width: 120px; }
+  width: 120px;
+}
 
 .dirty-task input, .tedious input, .useless input {
-  width: 100px; }
+  width: 100px;
+}
 
 .job-title input, .celeb input, .adjective input {
-  width: 80px; }
+  width: 80px;
+}
+
 
 .madlib {
-  margin: 40px auto; }
-  .madlib span {
-    text-decoration: underline; }
-  .madlib p {
-    font-size: 24px; }
+  margin: 40px auto;
 
-/*# sourceMappingURL=main.css.map */
+  span {
+  text-decoration: underline;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+

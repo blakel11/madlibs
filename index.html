@@ -29,13 +29,13 @@
               <h1>Automate This!</h1>
             </div>
           </div>
-          <div class="madLib-input row">
+          <div class="madLib-input row" ng-show="display === 0">
             <div class="col-md-12">
               <h2>Provide the following words:</h2>
             </div>
 
             <div class="input">
-              <form name="madLibForm" ng-submit="submit()" novalidate>
+              <form name="madLibForm" ng-submit="submitForm()" novalidate>
                 <div class="col-md-4 male-name">
                   <input required type="text" ng-model="male" name="male" placeholder="male name" />
                 </div>
@@ -52,7 +52,7 @@
                   <input required type="text" ng-model="celeb" name="celeb" placeholder="Celebrity" />
                 </div>
                 <div class="col-md-4 huge-number">
-                  <input required type="text" ng-model="huge" name="huge" placeholder="Huge number" />
+                  <input required type="number" ng-model="huge" name="huge" placeholder="Huge number" />
                 </div>
                 <div class="col-md-4 tedious">
                   <input required type="text" ng-model="tedious" name="tedious" placeholder="Tedious task" />
@@ -67,12 +67,13 @@
               </form>
             </div>
           </div>
-          <div class="madlib row">
+          <div class="madlib row" ng-hide="display === 0">
             <div class="col-md-10 col-md-offset-1">
                <p> <span>{{male}}</span> was a <span>{{job}}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span>{{tedious}}</span> and <span>{{dirty}}</span>. So, <span>{{male}}</span> met with his life mentor <span>{{celeb}}</span> who told him to learn how to <span>{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{useless}}</span> so he studied programming instead.</p><br><br>
               <p>
           What a great decision! With his new skills, <span>{{male}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnox}}</span> that not only loved <span>{{dirty}}</span> but did it <span>{{huge}}</span> times faster. </p>
             </div>
+            <input type="submit" ng-click="restart()" value="Start Over"/>
           </div>
         </div>
       </div>
