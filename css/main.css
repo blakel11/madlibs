@@ -1,6 +1,40 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/***************************
+  Animations
+*************************/
+.animate-show {
+  opacity: 1;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.animate-show.ng-hide-add.ng-hide-add-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: 1s linear 0.5s;
+  transition: 1s linear 0.5s; }
+
+.animate-show.ng-hide {
+  opacity: 0; }
+
+.positionAbsolute {
+  position: absolute; }
+
+.madlib {
+  margin: 40px auto; }
+  .madlib span {
+    text-decoration: underline; }
+  .madlib p {
+    font-size: 24px; }
+
+.madLib-input {
+  padding: 50px 0; }
+  .madLib-input h2 {
+    margin-left: 50px; }
+
 form .col-md-4 {
   height: 90px; }
   form .col-md-4 .error {
@@ -23,11 +57,6 @@ input[type=submit] {
   border: 2px solid black;
   margin-top: 80px;
   margin-bottom: 50px; }
-
-.madLib-input {
-  padding: 50px 0; }
-  .madLib-input h2 {
-    margin-left: 50px; }
 
 .happy {
   border-right: 2px solid black; }
@@ -63,12 +92,5 @@ input {
 
 .job-title input, .celeb input, .adjective input {
   width: 80px; }
-
-.madlib {
-  margin: 40px auto; }
-  .madlib span {
-    text-decoration: underline; }
-  .madlib p {
-    font-size: 24px; }
 
 /*# sourceMappingURL=main.css.map */

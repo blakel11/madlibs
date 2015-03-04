@@ -1,7 +1,7 @@
 angular.module('myApp',['ngMessages'])
   .controller('MyCtrl', function($scope){
     $scope.submitForm = function(){
-        if( $scope.madLibForm.$valid ) {
+        if( 1 === 1 ) {
             console.log('The form is valid');
             $scope.display = 1;
         } else {
@@ -26,3 +26,5 @@ angular.module('myApp',['ngMessages'])
 
     $scope.display = 0;
     });
+
+//$scope.madLibForm.$valid

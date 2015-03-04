@@ -1,6 +1,58 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/***************************
+  Animations
+*************************/
+
+.animate-show {
+  opacity: 1;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: 1s linear 0.5s;
+  transition: 1s linear 0.5s;
+}
+
+.animate-show.ng-hide {
+  opacity: 0;
+}
+
+.positionAbsolute {
+  position: absolute;
+}
+
+.madlib {
+  margin: 40px auto;
+
+  span {
+  text-decoration: underline;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+.madLib-input {
+  padding: 50px 0;
+  
+  h2 {
+  margin-left: 50px;
+  }
+}
+
+
+
+
+
 form {
   .col-md-4 {
     height: 90px;
@@ -31,14 +83,6 @@ input[type=submit] {
   margin-bottom: 50px;
 }
 
-.madLib-input {
-  padding: 50px 0;
-  
-  h2 {
-  margin-left: 50px;
-  }
-
-}
 
 .happy {
   border-right: 2px solid black;
@@ -94,15 +138,4 @@ input {
   width: 80px;
 }
 
-
-.madlib {
-  margin: 40px auto;
-
-  span {
-  text-decoration: underline;
-  }
-  p {
-    font-size: 24px;
-  }
-}
 
