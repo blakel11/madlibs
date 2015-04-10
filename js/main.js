@@ -5,7 +5,7 @@ angular.module('myApp',['ngMessages', 'ngAnimate'])
 
 
     $scope.submitForm = function(){
-        if( 1 === 1 ) {
+        if( $scope.madLibForm.$valid ) {
             console.log('The form is valid');
             $scope.display = 1;
         } else {
