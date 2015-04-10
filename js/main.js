@@ -1,5 +1,9 @@
-angular.module('myApp',['ngMessages'])
+angular.module('myApp',['ngMessages', 'ngAnimate'])
   .controller('MyCtrl', function($scope){
+
+    $scope.display = 0;
+
+
     $scope.submitForm = function(){
         if( 1 === 1 ) {
             console.log('The form is valid');
@@ -12,6 +16,8 @@ angular.module('myApp',['ngMessages'])
     $scope.restart = function(){
         console.log('Restart Activated');
         $scope.display = 0;
+
+
         $scope.male = null;
         $scope.dirty = null;
         $scope.obnox = null;
@@ -23,8 +29,6 @@ angular.module('myApp',['ngMessages'])
         $scope.adjective = null;
 
     };
-
-    $scope.display = 0;
-    });
+});
 
 //$scope.madLibForm.$valid
