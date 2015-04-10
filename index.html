@@ -38,57 +38,57 @@
               <div class="input">
                 <form name="madLibForm" ng-submit="submitForm()" novalidate>
                   <div class="col-md-4 male-name">
-                    <input required type="text" ng-model="male" name="male" placeholder="Male Name" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.male.$error">
+                    <input required type="text" ng-model="answers.male" name="male" placeholder="Male Name" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.male.$error">
                       <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 dirty-task">
-                    <input required type="text" ng-model="dirty" name="dirty" placeholder="Dirty Task" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.dirty.$error">
+                    <input required type="text" ng-model="answers.dirty" name="dirty" placeholder="Dirty Task" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.dirty.$error">
                       <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 obnoxious">
-                    <input required type="text" ng-model="obnox" name="obnox" placeholder="Obnoxious Celebrity" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.obnox.$error">
+                    <input required type="text" ng-model="answers.obnox" name="obnox" placeholder="Obnoxious Celebrity" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.obnox.$error">
                       <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 job-title">
-                    <input required type="text" ng-model="job" name="job" placeholder="Job Title" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.job.$error">
+                    <input required type="text" ng-model="answers.job" name="job" placeholder="Job Title" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.job.$error">
                       <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 celeb">
-                    <input required type="text" ng-model="celeb" name="celeb" placeholder="Celebrity" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.celeb.$error">
+                    <input required type="text" ng-model="answers.celeb" name="celeb" placeholder="Celebrity" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.celeb.$error">
                       <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 huge-number">
-                    <input required type="number" ng-model="huge" name="huge" placeholder="Huge Number" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.huge.$error">
+                    <input required type="number" ng-model="answers.huge" name="huge" placeholder="Huge Number" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.huge.$error">
                        <span class="error" ng-message="required">Field is required!</span>
                        <span class="error" ng-message="number">Please use a Number</span>           
                     </div>
                   </div>
                   <div class="col-md-4 tedious">
-                    <input required type="text" ng-model="tedious" name="tedious" placeholder="Tedious Task" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.tedious.$error">
+                    <input required type="text" ng-model="answers.tedious" name="tedious" placeholder="Tedious Task" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.tedious.$error">
                        <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 useless">
-                    <input required type="text" ng-model="useless" name="useless" placeholder="Useless Skill" />
-                   <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.useless.$error">
+                    <input required type="text" ng-model="answers.useless" name="useless" placeholder="Useless Skill" />
+                   <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.useless.$error">
                        <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
                   <div class="col-md-4 adjective">
-                    <input required type="text" ng-model="adjective" name="adjective" placeholder="Adjective" />
-                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.adjective.$error">
+                    <input required type="text" ng-model="answers.adjective" name="adjective" placeholder="Adjective" />
+                    <div ng-if="madLibForm.$submitted" ng-messages="madLibForm.answers.adjective.$error">
                       <span class="error" ng-message="required">Field is required!</span>
                     </div>
                   </div>
@@ -98,9 +98,9 @@
             </div> <!--end of .madLib-input -->
             <div class="animate-show positionAbsolute madlib row" ng-show="display === 1">
               <div class="col-md-10 col-md-offset-1">
-                 <p> <span>{{male}}</span> was a <span>{{job}}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span>{{tedious}}</span> and <span>{{dirty}}</span>. So, <span>{{male}}</span> met with his life mentor <span>{{celeb}}</span> who told him to learn how to <span>{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{useless}}</span> so he studied programming instead.</p><br><br>
+                 <p> <span>{{answers.male}}</span> was a <span>{{answers.job}}</span> who loved technology. Although he loved parts of his job, he absolutely hated  <span>{{answers.tedious}}</span> and <span>{{answers.dirty}}</span>. So, <span>{{answers.male}}</span> met with his life mentor <span>{{answers.celeb}}</span> who told him to learn how to <span>{{answers.useless}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{answers.useless}}</span> so he studied programming instead.</p><br><br>
                 <p>
-            What a great decision! With his new skills, <span>{{male}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnox}}</span> that not only loved <span>{{dirty}}</span> but did it <span>{{huge}}</span> times faster. </p>
+            What a great decision! With his new skills, <span>{{answers.male}}</span> built a(n) <span>{{answers.adjective}}</span> robot named <span>{{answers.obnox}}</span> that not only loved <span>{{answers.dirty}}</span> but did it <span>{{answers.huge}}</span> times faster. </p>
               </div>
               <input type="submit" ng-click="restart()" value="Start Over"/>
             </div> <!--end of .madLib -->

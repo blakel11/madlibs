@@ -1,8 +1,8 @@
 angular.module('myApp',['ngMessages', 'ngAnimate'])
-  .controller('MyCtrl', function($scope){
+  .controller('MyCtrl', ['$scope','$timeout', function($scope,$timeout){
 
+    $scope.answers = {};
     $scope.display = 0;
-
 
     $scope.submitForm = function(){
         if( $scope.madLibForm.$valid ) {
@@ -17,18 +17,9 @@ angular.module('myApp',['ngMessages', 'ngAnimate'])
         console.log('Restart Activated');
         $scope.display = 0;
 
-
-        $scope.male = null;
-        $scope.dirty = null;
-        $scope.obnox = null;
-        $scope.job = null;
-        $scope.celeb= null;
-        $scope.huge = null;
-        $scope.tedious = null;
-        $scope.useless = null;
-        $scope.adjective = null;
-
+        $timeout(
+            function(){
+                $scope.answers = {};
+            }, 600);
     };
-});
-
-//$scope.madLibForm.$valid
+}]);
